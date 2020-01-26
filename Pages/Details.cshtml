@@ -1,0 +1,7 @@
+﻿@page "{id?}"
+@model ViewComponentSys.Pages.DetailsModel
+@{
+}
+
+
+@await Component.InvokeAsync("User", int.Parse(ViewContext.RouteData.Values["id"].ToString()));
